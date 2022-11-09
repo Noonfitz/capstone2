@@ -1,2 +1,2 @@
 # capstone2
-Capstone ject Group 2
+Capstone project Group 2
