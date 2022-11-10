@@ -1,6 +1,135 @@
 /*home index.html page*/
 
+
+
+
 /*form page*/
+body .information{
+  margin-top: 5vmin;
+  margin-bottom: 11vmin;
+  
+  }
+  
+  .donor-section{
+      margin-left: 20vmax;
+  }
+  
+  .donorHead{
+      
+      margin-bottom: 30px;
+  }
+  
+  input[type=text], input[type=email] ,select,option {
+      width: 40%;
+      padding: 9px 10px;
+      margin: 11px 0;
+      display: block;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      box-sizing: border-box;
+    }
+  
+    input[type=number]{
+      width:5%;
+      border:1px solid #ccc;
+      border-radius: 6px;
+    }
+  
+  
+    .donaInform h1{
+      margin-top: 7vmin
+    }
+    .donaInform h4{
+      margin:20px 
+    }
+  
+    .drop{
+      width:30%;
+    }
+     
+    .paymargi{
+     margin-left: 27vmin;
+    }
+   .space input[type=radio] {
+      margin: 14px 0;
+   }
+  .space .creditCard{
+      width:20%;
+  }
+   .space{
+      padding-top: 20px;
+   }
+  
+   .form-decor{
+      width:10%;
+      display: inline-block;
+   }
+  
+   .cvv input[type=text]{
+      width:10%;
+   }
+  
+   
+    
+    button{
+      width: 10%;
+      background-color: lightgreen;
+      color: black;
+      padding: 14px 20px;
+      margin: 8px 0;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+  
+    button:hover{
+      background-color: green;
+      color:whitesmoke
+    }
+    
+    
+  @media only screen and (max-width:850px) {
+      .donor-section{
+          margin-left: 21vmin;
+      }
+      input[type=text],input[type=email],select{
+          width: 80%;
+          
+      }
+    input[type=number]{
+      width:16%;
+      border:1px solid #ccc;
+      border-radius: 6px;
+    }
+  
+    .drop{
+      width:70%;
+    }
+    .paymargi{
+      margin-left: 18vmin;
+     }
+  
+     button{
+      width: 30%;
+     }
+  
+     .cvv input[type=text]{
+      width:30%;
+   }
+  
+   .space .creditCard{
+      width:50%;
+  }
+  
+  .form-decor{
+      width:30%;
+      display: inline-block;
+   }
+  }
+    
+
+
+
 
 /* ==========================================================================
    EXAMPLE Media Queries for Responsive Design.

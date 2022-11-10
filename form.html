@@ -8,19 +8,22 @@
     <title>Donation Form</title>
 </head>
 
-<body class="information">
-<form action="">
-<div>
-    <h1>Donor information</h1>
+<body>
 
-    <label for="">First Name</label>
-    <input type="text" name="" id="">
+<form action="" class="information">
+    
 
-    <label for="">Last Name</label>
-    <input type="text" name="" id="">
+    <div class="donor-section">
+        <h1 class="donorHead ">Donor information</h1>
+    
+    <label for="fName" class="labelName">First Name</label>
+    <input type="text" name="fName" id="fName" required>
 
-    <label for="">Email Adress</label>
-    <input type="text" name="" id="">
+    <label for="lName">Last Name</label>
+    <input type="text" name="lName" id="lName">
+
+    <label for="email">Email</label>
+    <input type="Email" name="email" id="email" required>
 
     <label for="">Adress</label>
     <input type="text" name="" id="" placeholder="No./Apartment no.">
@@ -39,73 +42,83 @@
 </div>
 
 
-<div>
+<div class="donaInform">
 
-    <h1>Donation information</h1>
-    <h4>*Gift Amount</h4>
+       
+<div class="donor-section">
+    <h1 class="donorHead">Donation information</h1>
+       <h4 >*Gift Amount</h4>
+  <div class="space">
+    <input type="radio" id="fiveHun" name="money"><span> </span><label for="fiveHun">$500</label><br>
+    <input type="radio" id="oneHun"name="money"><span> </span><label for="oneHun">$100</label><br>
+    <input type="radio" id="fifth"name="money"><span> </span><label for="fifth">$50</label><br>
+    <input type="radio" id="twentyFive" name="money"><span> </span><label for="twentyFive">$25</label><br>
+    <input type="radio" id="upto" name="money"><span> </span><label for="upto">$ </label><input type="number"><br>
+  </div>
+      
+   <div class="space">
+       <label for="">Is this a one-time gift or a monthly donation?</label><br>
+       <select name="monthlyDona" id="dropdown" class="drop">
+       <option value="nothing" selected></option>
+       <option value="one-time">One-time</option>
+       <option value="monthly">Monthly</option>
+       </select>
+    </div>  
 
-<input type="radio"><label for="">$500</label>
-<input type="radio"><label for="">$100</label>
-<input type="radio"><label for="">$50</label>
-<input type="radio"><label for="">$25</label>
-<input type="radio"><label for="">$</label><input type="text">
 
-<div>
-<label for="">Is this a one-time gift or a monthly donation?</label>
-<select name="monthlyDona" id="dropdown" class="form-decor">
-<option value="nothing" selected></option>
-<option value="one-time">one-time</option>
-<option value="monthly">Monthly</option>
-</select>
+
+
+      <h1 class="">Payment</h1>
+    <div class="space">
+      <input type="radio" id="credit" name="payment"><span> </span><label for="credit">Credit</label><br>
+      <input type="radio" id="bank" name="payment"><span> </span><label for="bank">Bank</label><br>
+      <input type="radio" id="paypal" name="payment"><span>
+
+      </span><label for="paypal">Paypal</label><br>
+    </div>
+
+   <div class="space">
+    <label for="">Credit Card Number</label>
+    <input type="text" class="creditCard">
+   </div>
+
+    <label for="">Expiration Date</label><br>
+    <select name="month" id="dropdown"  class="form-decor">
+      <option value="nothing" selected>month</option>
+      <option value="jan">01</option>
+      <option value="jan">02</option>
+      <option value="jan">03</option>
+      <option value="jan">04</option>
+      <option value="jan">05</option>
+      <option value="jan">06</option>
+      <option value="jan">07</option>
+      <option value="jan">08</option>
+      <option value="jan">09</option>
+      <option value="jan">10</option>
+      <option value="jan">11</option>
+      <option value="jan">12</option>
+    </select>
+
+    <select name="month" id="dropdown"  class="form-decor">
+      <option value="nothing" selected>year</option>
+      <option value="jan">23</option>
+      <option value="jan">24</option>
+      <option value="jan">25</option>
+      <option value="jan">26</option>
+      <option value="jan">27</option>
+    </select><br>
+
+    <div class="cvv">
+    <label for="">Security Code</label>
+    <input type="text" name="" id="">
+    </div>
+
+
+
+<button class="btn"">Donate</button>
+
 </div>
-
-</div>
-
-<div>
-<h1>Payment</h1>
-<input type="radio"><label for="">Credit</label>
-<input type="radio"><label for="">Bank</label>
-<input type="radio"><label for="">Paypal</label>
-</div>
-
-
-<label for="">Credit Card Number</label>
-<input type="text">
-
-<div>
-<label for="">Expiration Date</label>
-<select name="month" id="dropdown"  class="form-decor">
-<option value="nothing" selected>month</option>
-<option value="jan">01</option>
-<option value="jan">02</option>
-<option value="jan">03</option>
-<option value="jan">04</option>
-<option value="jan">05</option>
-<option value="jan">06</option>
-<option value="jan">07</option>
-<option value="jan">08</option>
-<option value="jan">09</option>
-<option value="jan">10</option>
-<option value="jan">11</option>
-<option value="jan">12</option>
-</select>
-
-<select name="month" id="dropdown"  class="form-decor">
-<option value="nothing" selected>year</option>
-<option value="jan">23</option>
-<option value="jan">24</option>
-<option value="jan">25</option>
-<option value="jan">26</option>
-<option value="jan">27</option>
-</select>
-
-    
-<label for="">Security Code</label>
-<input type="text" name="" id="">
-</div>
-
-
-<button>Donate</button>
+<script src="index.js"></script>
 </form>
 </body>
 </html>
