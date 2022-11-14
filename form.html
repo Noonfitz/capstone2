@@ -4,49 +4,98 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!--CSS-->
     <link rel="stylesheet" href="styles.css">
+
+<!--font-->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+
     <title>Donation Form</title>
 </head>
 
-<body>
+<body class="form-body">
+
+<!-- first container  -->
+
+
+  <div class="first-container">
+     <h1>Ways to give</h1>
+     <p>Every time you support the Animal Rescue, you are saving lives and giving animals care, love,
+      and the second chance they deserve. There are so many ways to support the animals you love.</p>
+  </div>
+
+<!--second container (aminal in need) -->
+
+<div class="second-container">
+    <h2 class="choiceHead">Give Now to Help Animals in Need!</h2>   
+
+    <div class="row animalNeed">
+      <div class="col">
+        <img src="./img/provideToys.jpg" alt="dog with toy">
+        <p><b>$25</b> can provide food, toys and treats for recued animak to help them feel safe and loved</p>
+      </div>
+
+      <div class="col">
+        <img src="./img/vaccine.jpg" alt="vaccine for animal">
+        <p><b>$50</b> can provide vacce for up to five community Cats - feral, stray, and friendly cats living outdoors</p>
+      </div>
+
+      <div class="col">
+        <img src="./img/shelterDogs.jpg" alt="shelter for animal">
+        <p><b>$100</b> can provide a shelter with special enrichment while they wait for their new homes</p>
+      </div>
+
+      <div class="col">
+        <img src="./img/investigate.jpg" alt="">
+        <p><b>$500</b> can help protect animals by supporting our efforts to investigate cases of cruelty ans neglect</p>
+      </div>
+
+    </div>
+</div>
+
+
+
+<!--personal info-->
 
 <form action="" class="information">
-    
+    <h2 class="donorHead ">Personal Info</h2>
 
     <div class="donor-section">
-        <h1 class="donorHead ">Donor information</h1>
-    
-    <label for="fName" class="labelName">First Name</label>
-    <input type="text" name="fName" id="fName" required>
+        
+    <label  class="labelLeft" for="fName" class="labelName">First Name</label>
+    <input  type="text" name="fName" id="fName" required>
 
     <label for="lName">Last Name</label>
-    <input type="text" name="lName" id="lName">
+    <input  type="text" name="lName" id="lName">
 
     <label for="email">Email</label>
-    <input type="Email" name="email" id="email" required>
+    <input  type="Email" name="email" id="email" required>
 
     <label for="">Adress</label>
-    <input type="text" name="" id="" placeholder="No./Apartment no.">
+    <input  type="text" name="" id="">
 
     <label for="">City</label>
-    <input type="text" name="" id="">
+    <input  type="text" name="" id="">
 
     <label for="">State</label>
-    <input type="text" name="" id="">
+    <input  type="text" name="" id="">
 
     <label for="">Zip Code</label>
-    <input type="text" name="" id="">
+    <input  type="text" name="" id="">
 
     <label for="">Phone (Optional) </label>
     <input type="text" name="" id="">
-</div>
+    </div>
+
+
 
 
 <div class="donaInform">
 
        
 <div class="donor-section">
-    <h1 class="donorHead">Donation information</h1>
+    <h2 class="donorHead">Donation information</h2>
        <h4 >*Gift Amount</h4>
   <div class="space">
     <input type="radio" id="fiveHun" name="money"><span> </span><label for="fiveHun">$500</label><br>
@@ -68,7 +117,7 @@
 
 
 
-      <h1 class="">Payment</h1>
+      <h2 class="">Payment</h2>
     <div class="space">
       <input type="radio" id="credit" name="payment"><span> </span><label for="credit">Credit</label><br>
       <input type="radio" id="bank" name="payment"><span> </span><label for="bank">Bank</label><br>

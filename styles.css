@@ -3,31 +3,106 @@
 
 
 
-/*form page*/
-body .information{
-  margin-top: 5vmin;
-  margin-bottom: 11vmin;
+/*form.html page*/
+
+.form-body{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+  font-family:'Poppins', sans-serif;
+}
+        /*first-container*/
+.first-container{
+  margin:70px 100px;
+  text-align: center;
+}
+
+.first-container p {
+  margin: auto 20rem;
+font-size: 2vmin;
+font-weight:500;
+
   
-  }
+}
+
+        /*second-container*/
+.second-container{
+  margin: 70px 100px;
+}
+
+.choiceHead {
+  margin-bottom:60px;
+  text-align: center;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  justify-content:space-around;
+}
+
+.row .col{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+ 
+}
+
+
+
+      /* personal info*/
+
+.labelLeft {
+    text-align: left;
+}
   
-  .donor-section{
-      margin-left: 20vmax;
+.donor-section {
+display: grid;
+margin: auto 40em;
+
+}
+
+
+input[type=text], input[type=email] ,select,option {
+    width: 100%;
+    padding: 9px 10px;
+    margin: 11px 0;
+    display: block;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-sizing: border-box;
   }
+
+
   
   .donorHead{
-      
+text-align: center;
       margin-bottom: 30px;
   }
+
   
-  input[type=text], input[type=email] ,select,option {
-      width: 40%;
-      padding: 9px 10px;
-      margin: 11px 0;
-      display: block;
-      border: 1px solid #ccc;
-      border-radius: 6px;
-      box-sizing: border-box;
-    }
+
+
+  .animalNeed img{
+    position: relative;
+  display: flex;
+    width:250px;
+    height:200px;
+    overflow: hidden;
+    border-radius:50%;
+  align-items: center;
+    
+
+  }
+
+  .animalNeed p{
+    width :100%;
+    text-align: center;
+
+  }
+
+  
+  
   
     input[type=number]{
       width:5%;
