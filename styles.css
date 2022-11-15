@@ -22,6 +22,7 @@
 font-size: 2vmin;
 font-weight:500;
 
+
   
 }
 
@@ -149,6 +150,7 @@ input[type=text], input[type=email] ,select,option {
 
     .paymentHead{
       margin-top: 50px;
+      text-align: center;
     }
 
     .creditSpace{
@@ -224,25 +226,86 @@ input[type=text], input[type=email] ,select,option {
 }
 
 
-@media only screen and (max-width: 768) {
+@media only screen and (max-width:1366px) {
 
   .first-container{
     margin: 40px auto;
   }
 
   .first-container h1{
-    font-size: 1.2em;
+    font-size: 2em;
   }
 
-  .first-container p {
-   margin: auto 40px;
-
+  .donor-section {
+    margin: auto 15em; 
+  }
+  
+  .donaInform{
+    margin: auto 15em;
   }
 
 }
 
+@media only screen and (max-width: 1200px){
+
+   .first-container p{
+   margin: auto 10rem;
+   text-align: center;
+   
+   }
+  .row{
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+
+  .col{
+    margin: 30px auto;
+  }
+ 
+  .animalNeed p{
+    max-width :45%;
+    text-align: center;
+  
+  }
+  
+}
+
+@media only screen and (max-width: 720px){
+  
+  .first-container{
+    margin: auto 0;
+  }
+
+  .first-container p {
+    margin: auto 6rem;
+
+    font-size: 1em;
+  
+    
+  }
+  .row {
+    display: block;
+    align-content: center;
+   
+  }
+
+  .second-container{
+    margin: auto 0;
+  }
+
+  .donor-section {
+    margin: auto 5em; 
+  }
+  
+  .donaInform{
+    margin: auto 5em;
+  }
+  
+  
 
 
+
+}
     
 
 
