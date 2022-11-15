@@ -48,13 +48,28 @@ font-weight:500;
  
 }
 
+.animalNeed img{
+  position: relative;
+  display: flex;
+  width:250px;
+  height:200px;
+  overflow: hidden;
+  border-radius:50%;
+  align-items: center;
+  
+
+}
+
+.animalNeed p{
+  width :100%;
+  text-align: center;
+
+}
+
 
 
       /* personal info*/
 
-.labelLeft {
-    text-align: left;
-}
   
 .donor-section {
 display: grid;
@@ -73,81 +88,107 @@ input[type=text], input[type=email] ,select,option {
     box-sizing: border-box;
   }
 
+  #fullname {
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+  #fullname > div {
+    padding: 0 3px;
+  }
 
+  #address{
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+  }
+
+  #address > div {
+  padding: 0 6px;
+ }
+
+ #phone{
+  width:50%
+ }
+ 
+
+    /*donation information */
+
+   .donaInform {
+    display: grid;
+    margin: auto 40em;
+   }
   
   .donorHead{
-text-align: center;
-      margin-bottom: 30px;
+     text-align: center;
+      margin: 25px auto;
   }
 
+  .space input[type=radio] {
+    margin: 14px 0;
+   }
   
-
-
-  .animalNeed img{
-    position: relative;
-  display: flex;
-    width:250px;
-    height:200px;
-    overflow: hidden;
-    border-radius:50%;
-  align-items: center;
-    
-
-  }
-
-  .animalNeed p{
-    width :100%;
-    text-align: center;
-
-  }
-
-  
-  
-  
-    input[type=number]{
-      width:5%;
+ 
+    .putAmount[type=text] {
+      display: inline-block;
+      width: 60px;
+      height: 25px;
       border:1px solid #ccc;
       border-radius: 6px;
     }
   
   
-    .donaInform h1{
-      margin-top: 7vmin
+    .monthlyOrOneTime {
+      padding-top: 30px;
     }
-    .donaInform h4{
-      margin:20px 
+
+    .dropDownMonthly{
+      width: 50%;
     }
-  
-    .drop{
-      width:30%;
+
+
+
+
+    .paymentHead{
+      margin-top: 50px;
     }
-     
-    .paymargi{
-     margin-left: 27vmin;
+
+    .creditSpace{
+      padding-top: 20px ;
+      padding-bottom: 20px;
     }
-   .space input[type=radio] {
-      margin: 14px 0;
-   }
-  .space .creditCard{
-      width:20%;
+
+    .creditSpace .creditCard{
+      width: 50%;
   }
-   .space{
-      padding-top: 20px;
-   }
   
-   .form-decor{
-      width:10%;
-      display: inline-block;
-   }
-  
-   .cvv input[type=text]{
-      width:10%;
-   }
-  
+    
+     
+    
    
+  #expireMonthYear {
+    display: grid;
+    grid-template-columns: 120px 120px;
+  }
+
+  #expireMonthYear > div {
+    padding: 0 3px;
+  }
+
+  
+  .cvv{
+    padding-bottom: 23px;
+  }
+
+   .cvv input[type=text]{
+      width:21%;
+   }
+  
+
+   .button{
+    padding-bottom: 33px;
+   }
     
     button{
-      width: 10%;
+      width: 36%;
       background-color: lightgreen;
       color: black;
       padding: 14px 20px;
@@ -162,45 +203,47 @@ text-align: center;
       color:whitesmoke
     }
     
+
+
+
     
-  @media only screen and (max-width:850px) {
-      .donor-section{
-          margin-left: 21vmin;
-      }
-      input[type=text],input[type=email],select{
-          width: 80%;
-          
-      }
-    input[type=number]{
-      width:16%;
-      border:1px solid #ccc;
-      border-radius: 6px;
-    }
-  
-    .drop{
-      width:70%;
-    }
-    .paymargi{
-      margin-left: 18vmin;
-     }
-  
-     button{
-      width: 30%;
-     }
-  
-     .cvv input[type=text]{
-      width:30%;
+  @media only screen and (min-width: 1366px) {
+
+    .first-container p {
+      margin: auto 15rem;
+   }
+
+    .donor-section {
+      margin: auto 25em;
+   }
+
+    .donaInform {
+      margin: auto 25em;
    }
   
-   .space .creditCard{
-      width:50%;
+}
+
+
+/* still working on it */
+@media only screen and (max-width: 768) {
+
+  .first-container{
+    margin: 40px auto;
   }
-  
-  .form-decor{
-      width:30%;
-      display: inline-block;
-   }
+
+  .first-container h1{
+    font-size: 1.2em;
   }
+
+  .first-container p {
+   margin: auto 40px;
+
+  }
+
+}
+
+
+
     
 
 

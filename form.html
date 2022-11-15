@@ -61,13 +61,22 @@
 <form action="" class="information">
     <h2 class="donorHead ">Personal Info</h2>
 
-    <div class="donor-section">
+  <div class="donor-section">
         
-    <label  class="labelLeft" for="fName" class="labelName">First Name</label>
-    <input  type="text" name="fName" id="fName" required>
+      <div id="fullname">
+        <!-- First Name -->
+        <div>
+          <label for="fname">First Name</label>
+          <input type="text" id="fname" name="firstname" required />
+        </div>
+  
+        <!-- Last Name -->
+        <div>
+          <label for="lname">Last Name</label>
+          <input type="text" id="lname" name="lastname" />
+        </div>
+      </div>
 
-    <label for="lName">Last Name</label>
-    <input  type="text" name="lName" id="lName">
 
     <label for="email">Email</label>
     <input  type="Email" name="email" id="email" required>
@@ -75,64 +84,77 @@
     <label for="">Adress</label>
     <input  type="text" name="" id="">
 
-    <label for="">City</label>
-    <input  type="text" name="" id="">
+    <div id="address">
+      <!-- City -->
+      <div>
+        <label for="city">City</label>
+        <input type="text" id="city" name="city" required />
+      </div>
 
-    <label for="">State</label>
-    <input  type="text" name="" id="">
-
-    <label for="">Zip Code</label>
-    <input  type="text" name="" id="">
-
-    <label for="">Phone (Optional) </label>
-    <input type="text" name="" id="">
+      <!-- State -->
+      <div>
+        <label for="state">State</label>
+        <input type="text" id="state" name="state" />
+      </div>
+    
+      <!-- Zip -->
+     <div>
+        <label for="zipCode">Zip Code</label>
+        <input type="text" id="zipCode" name="zip code" />
+      </div>
     </div>
 
 
+    <label for="phone">Phone (Optional) </label>
+    <input type="text" name="" id="phone">
+  </div>
 
 
-<div class="donaInform">
+    <!--donation information-->
+
+  <div class="donaInform">
 
        
-<div class="donor-section">
     <h2 class="donorHead">Donation information</h2>
-       <h4 >*Gift Amount</h4>
-  <div class="space">
-    <input type="radio" id="fiveHun" name="money"><span> </span><label for="fiveHun">$500</label><br>
-    <input type="radio" id="oneHun"name="money"><span> </span><label for="oneHun">$100</label><br>
-    <input type="radio" id="fifth"name="money"><span> </span><label for="fifth">$50</label><br>
-    <input type="radio" id="twentyFive" name="money"><span> </span><label for="twentyFive">$25</label><br>
-    <input type="radio" id="upto" name="money"><span> </span><label for="upto">$ </label><input type="number"><br>
-  </div>
-      
+    <h4 >*Gift Amount</h4>
    <div class="space">
+     <input type="radio" id="fiveHun" name="money"><span> </span><label for="fiveHun">$500</label><br>
+     <input type="radio" id="oneHun"name="money"><span> </span><label for="oneHun">$100</label><br>
+     <input type="radio" id="fifth"name="money"><span> </span><label for="fifth">$50</label><br>
+     <input type="radio" id="twentyFive" name="money"><span> </span><label for="twentyFive">$25</label><br>
+     <input type="radio" id="upto" name="money"><span> </span><label for="upto">$ </label><input class="putAmount"type="text"><br>
+   </div>
+      
+   <div class= "monthlyOrOneTime">
        <label for="">Is this a one-time gift or a monthly donation?</label><br>
-       <select name="monthlyDona" id="dropdown" class="drop">
-       <option value="nothing" selected></option>
-       <option value="one-time">One-time</option>
-       <option value="monthly">Monthly</option>
-       </select>
+       <select name="monthlyDona" id="dropdown" class="dropDownMonthly">
+         <option value="nothing" selected></option>
+         <option value="one-time">One-time</option>
+         <option value="monthly">Monthly</option>
+         </select>
     </div>  
 
 
 
 
-      <h2 class="">Payment</h2>
+    <h2 class="paymentHead">Payment</h2>
     <div class="space">
       <input type="radio" id="credit" name="payment"><span> </span><label for="credit">Credit</label><br>
       <input type="radio" id="bank" name="payment"><span> </span><label for="bank">Bank</label><br>
-      <input type="radio" id="paypal" name="payment"><span>
-
-      </span><label for="paypal">Paypal</label><br>
+      <input type="radio" id="paypal" name="payment"><span> </span><label for="paypal">Paypal</label><br>
     </div>
 
-   <div class="space">
-    <label for="">Credit Card Number</label>
-    <input type="text" class="creditCard">
+   <div class="creditSpace">
+    <label for="creditCard">Credit Card Number</label>
+    <input type="text" id="creditCard" class="creditCard">
    </div>
 
-    <label for="">Expiration Date</label><br>
-    <select name="month" id="dropdown"  class="form-decor">
+
+    <label for="">Expiration Date</label>
+
+<div id="expireMonthYear">
+  <div>
+    <select name="month" id="dropdown">
       <option value="nothing" selected>month</option>
       <option value="jan">01</option>
       <option value="jan">02</option>
@@ -147,8 +169,10 @@
       <option value="jan">11</option>
       <option value="jan">12</option>
     </select>
+ </div>
 
-    <select name="month" id="dropdown"  class="form-decor">
+  <div>
+    <select name="month" id="dropdown" >
       <option value="nothing" selected>year</option>
       <option value="jan">23</option>
       <option value="jan">24</option>
@@ -156,18 +180,23 @@
       <option value="jan">26</option>
       <option value="jan">27</option>
     </select><br>
-
-    <div class="cvv">
-    <label for="">Security Code</label>
-    <input type="text" name="" id="">
-    </div>
-
-
-
-<button class="btn"">Donate</button>
+  </div>
 
 </div>
-<script src="index.js"></script>
+
+    <div class="cvv">
+       <label for="">Security Code</label>
+        <input type="text" name="" id="">
+    </div>
+
+     <div class="button">
+     <button class="btn"">Donate</button>
+     </div>
+
+  </div>
 </form>
-</body>
+
+    <script src="index.js"></script>
+
+  </body>
 </html>
