@@ -92,7 +92,7 @@ ul {
     z-index: -1;
 }
 
-iframe {
+video {
   display: block;
   width: 100%;
   height: auto;
