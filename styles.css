@@ -1,5 +1,118 @@
 /*home index.html page*/
 
+html {
+  background-color: #fefae0;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family:'Poppins', sans-serif;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.header {
+    display: flex;
+    text-align: center;
+}
+
+#home {
+  text-align: center;
+  width: 100vw;
+  height: 100px;
+  background: rgb(250, 237, 205);
+  border-radius: 100px / 50px;
+}
+
+.topnav{
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.mainnav {
+  display: flex;
+  justify-content: space-around;
+  width: 100vw;
+  position: -webkit-sticky;
+  position: sticky;
+  
+}
+
+.mainnav ul {
+  list-style-type: none;
+  justify-content: space-around;
+  margin: 0;
+  padding: 0;
+}
+
+.mainnav li {
+  float: left;
+  background-color: #d4a373;
+}
+
+.mainnav li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+ /* Change the link color on hover */
+ .mainnav li a:hover {
+    background-color: #faedcd;
+    color: black;
+}
+
+.video-container {
+  display: grid;
+  grid-template-areas: "video";
+  place-items: center;
+  place-content: center;
+  overflow: hidden;
+  max-height: clamp(450px, 50vh, 600px);
+  width: 100vw;
+}
+
+iframe {
+  position: relative;
+  z-index: 1;
+  width: 100vw;
+  height: 100vh;
+}
+
+.opener {
+    display: grid;
+    background-color: rgba(233, 237, 201, 0.5);
+    grid-area: 1 / 2 / 1 / 2;
+    width: 100vw;
+    text-align: center;
+    align-content: center;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+
+.container {
+  width: 200px;
+  height: 120px;
+}
+
+/* Resize images */
+.container img {
+  display: inline-block;
+  width: 100%;
+  height: auto;
+}
+
+
 
 
 
