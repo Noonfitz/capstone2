@@ -1,11 +1,23 @@
 /*home index.html page*/
 
+* {
+  box-sizing: border-box;
+}
+
 html {
   background-color: #fefae0;
+  color:#000;
+  text-align: center;
+  height: 100%;
+  font: normal 1em/1.5em;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family:'Poppins', sans-serif;
+}
+
+body {
+  height: 100%;
 }
 
 a {
@@ -71,33 +83,22 @@ ul {
     color: black;
 }
 
-.video-container {
-  display: grid;
-  grid-template-areas: "video";
-  place-items: center;
-  place-content: center;
-  overflow: hidden;
-  max-height: clamp(450px, 50vh, 600px);
-  width: 100vw;
+#video-viewport {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
 }
 
 iframe {
-  position: relative;
-  z-index: 1;
-  width: 100vw;
-  height: 100vh;
+  display: block;
+  width: 100%;
+  height: auto;
 }
 
-.opener {
-    display: grid;
-    background-color: rgba(233, 237, 201, 0.5);
-    grid-area: 1 / 2 / 1 / 2;
-    width: 100vw;
-    text-align: center;
-    align-content: center;
-    font-size: 1.5em;
-    font-weight: bold;
-}
+
 
 
 .container {
