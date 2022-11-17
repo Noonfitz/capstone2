@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="index-html" lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -19,10 +19,10 @@
 </head>
 
 <body>
-    <div class="header" id="home">
+    <div class="header-container" id="home">
         <h1>The Humane Society of the United States</h1>
         <div class="topnav">
-            <form id="form" role="search">
+            <form class="search-bar"id="form" role="search">
                 <input type="search" id="query" name="q"
                 placeholder="Search..."
                 aria-label="Search through site content">
@@ -67,10 +67,14 @@
 
     <section class="base-container">
         <div class="stats-container">
-            <div class="statistics">
-                <p># of Adoptions in 2022</p>
-                <p># of Volunteer Hours in 2022</p>
-                <p># of Spay/Neuter Surgeries in 2022</p>
+            <div class="statistics" id="stat-circles">
+                <p class="stat-text"># of Adoptions in 2022</p>
+            </div>
+            <div class="statistics" id="stat-circles">
+                <p class="stat-text"># of Volunteer Hours in 2022</p>
+            </div>
+            <div class="statistics" id="stat-circles">
+                <p class="stat-text"># of Spay/Neuter Surgeries in 2022</p> 
             </div>
         </div>
     </section>

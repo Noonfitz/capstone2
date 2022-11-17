@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 
-html {
+.index-html {
   background-color: #fefae0;
   color:#000;
   text-align: center;
@@ -16,10 +16,6 @@ html {
   font-family:'Poppins', sans-serif;
 }
 
-body {
-  height: 100%;
-}
-
 a {
   color: black;
   text-decoration: none;
@@ -29,36 +25,41 @@ ul {
   list-style-type: none;
 }
 
-.header {
-    display: flex;
-    text-align: center;
+.search-bar {
+  padding-right: 2.5em;
+  z-index: 5;
 }
 
 #home {
-  text-align: center;
   width: 100vw;
   height: 100px;
   background: rgb(250, 237, 205);
   border-radius: 100px / 50px;
+  z-index: 0;
 }
 
 .topnav{
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
-  z-index: 2;
+  z-index: 5;
 }
 
 .mainnav {
-  display: flex;
-  justify-content: space-around;
-  width: 100vw;
+  display: block;
+  width: 100%;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background: rgb(212, 163, 115);
+  text-align: right;
   position: -webkit-sticky;
   position: sticky;
   z-index: 2;
 }
 
 .mainnav ul {
+  display: flex;
   list-style-type: none;
   justify-content: space-around;
   margin: 0;
@@ -66,8 +67,9 @@ ul {
 }
 
 .mainnav li {
-  float: left;
+  display: block;
   background-color: #d4a373;
+  padding: 0;
 }
 
 .mainnav li a {
@@ -82,10 +84,6 @@ ul {
  .mainnav li a:hover {
     background-color: #faedcd;
     color: black;
-}
-
-*::before {
-
 }
 
 *::after {
@@ -110,7 +108,6 @@ video {
 .fullsize-video-bg {
   height: 100%;
   overflow: hidden;
-  
 }
 
 .fullsize-video-bg::before {
@@ -132,7 +129,7 @@ video {
   padding: 0;
   position: relative;
   z-index: 2;
-  text-shadow: 0 1px 5px rgba(46, 45, 45, 0.5);
+  text-shadow: 0 1px 5px rgba(0, 0, 0, 1);
 }
 
 .fullsize-video-bg .inner>div {
@@ -140,8 +137,23 @@ video {
   display: table-cell;
   vertical-align: auto;
   padding: 0 2em;
+  color: white;
 }
 
+.stats-container {
+  display: flex;
+  text-align: center;
+  justify-content: space-around;
+  font-weight: bolder;
+  padding-top: 2em;
+}
+
+#stat-circles {
+    width: 125px;
+    height: 125px;
+    background: rgb(233, 237, 201);
+    border-radius: 50%
+}
 
 .container {
   width: 200px;
