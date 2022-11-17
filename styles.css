@@ -140,6 +140,12 @@ video {
   color: white;
 }
 
+.donate-button {
+  border-radius: 50%;
+  background-color: rgb(212, 163, 115);
+
+}
+
 .stats-container {
   display: flex;
   text-align: center;
@@ -155,6 +161,10 @@ video {
     border-radius: 50%
 }
 
+.featured-pets-container {
+  background-color: rgb(204, 213, 174);
+}
+
 .container {
   width: 200px;
   height: 120px;
@@ -162,9 +172,16 @@ video {
 
 /* Resize images */
 .container img {
-  display: inline-block;
-  width: 100%;
-  height: auto;
+  display: flex;
+  justify-content: space-around;
+  height: 250px;
+  width: 250px;
+  overflow: hidden;
+  border-radius:50%;
+}
+
+.view-more-button {
+  background-color: rgb(212, 163, 115);
 }
 
 
