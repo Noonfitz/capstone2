@@ -190,6 +190,17 @@ video {
 
 /*form.html page*/
 
+.stripes-button{
+  position: absolute;
+ width:25px;
+  top:20px;
+  right:20px;
+  cursor:pointer;
+  display: none;
+}
+
+
+
 .form-body{
   margin:0;
   padding:0;
@@ -376,7 +387,7 @@ input[type=text], input[type=email] ,select,option {
     
     button{
       width: 36%;
-      background-color: lightgreen;
+      background-color: rgb(212, 163, 115);
       color: black;
       padding: 14px 20px;
       margin: 8px 0;
@@ -386,8 +397,8 @@ input[type=text], input[type=email] ,select,option {
     }
   
     button:hover{
-      background-color: green;
-      color:whitesmoke
+      background-color:burlywood;
+      color:whitesmoke;
     }
     
 
@@ -452,18 +463,21 @@ input[type=text], input[type=email] ,select,option {
     text-align: center;
   
   }
+
   
 }
 
 @media only screen and (max-width: 720px){
   
+
   .first-container{
     margin: auto 0;
   }
 
+  
+
   .first-container p {
     margin: auto 6rem;
-
     font-size: 1em;
   
     
@@ -486,8 +500,41 @@ input[type=text], input[type=email] ,select,option {
     margin: auto 5em;
   }
   
-  
+    /* nav-bar mobile */
 
+
+    .mainnav{
+      padding: 0;
+    }
+  
+  
+    .mobile-button{
+      margin-top: 0;
+    }
+
+
+  .stripes-button{
+    display: block;
+    justify-content: space-around;
+  }
+
+
+.link-bar{
+  flex-direction: column;
+ width: 100%;
+ height:100vh;
+ justify-content: center;
+ background-color: darkkhaki;
+ opacity: 0.99;
+ margin-top:-900px; /* make the nav-bar go at the top*/
+ transition: all .5s ease-in-out;
+ 
+}
+
+
+.link-bar li{
+  margin: 0 auto;
+}
 
 
 }
