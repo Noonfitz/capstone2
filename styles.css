@@ -190,9 +190,47 @@ video {
 
 /*form.html page*/
 
+ul{
+  list-style: none;
+}
+
+.navbar{
+  position:absolute;
+  top:0;
+  left:0;
+  display:flex;
+  width:100%;
+  justify-content: space-around;
+  padding:9px;
+  color:whitesmoke;
+  background: rgb(212, 163, 115);
+}
+
+.navbar li a {
+  padding: 24px 7px;
+}
+.navbar li a:hover{
+  background-color: #faedcd;
+    color: black;
+}
+
+
+.link-bar{
+  display:flex;
+  align-items: center;
+
+}
+
+
+.link-bar li{
+  margin:0 20px;
+  cursor:pointer;
+}
+
+
 .stripes-button{
   position: absolute;
- width:25px;
+ width:55px;
   top:20px;
   right:20px;
   cursor:pointer;
@@ -206,6 +244,7 @@ video {
   padding:0;
   box-sizing: border-box;
   font-family:'Poppins', sans-serif;
+  
 }
         /*first-container*/
 .first-container{
@@ -217,11 +256,12 @@ video {
   margin: auto 20rem;
 font-size: 2vmin;
 font-weight:500;
-
-
   
 }
 
+.first-container h1{
+  padding-top: 70px;
+}
         /*second-container*/
 .second-container{
   margin: 70px 100px;
@@ -444,6 +484,9 @@ input[type=text], input[type=email] ,select,option {
 
 @media only screen and (max-width: 1200px){
 
+  .first-container h1{
+    padding-top:100px;
+  }
    .first-container p{
    margin: auto 10rem;
    text-align: center;
@@ -455,8 +498,10 @@ input[type=text], input[type=email] ,select,option {
   }
 
   .col{
-    margin: 30px auto;
+    margin: 30px 0;
   }
+
+
  
   .animalNeed p{
     max-width :45%;
@@ -469,6 +514,9 @@ input[type=text], input[type=email] ,select,option {
 
 @media only screen and (max-width: 720px){
   
+  .first-container h1{
+    padding-top: 80px;
+  }
 
   .first-container{
     margin: auto 0;
@@ -488,6 +536,10 @@ input[type=text], input[type=email] ,select,option {
    
   }
 
+  .col img{
+    z-index:-1;
+  }
+
   .second-container{
     margin: auto 0;
   }
@@ -503,39 +555,39 @@ input[type=text], input[type=email] ,select,option {
     /* nav-bar mobile */
 
 
-    .mainnav{
-      padding: 0;
-    }
+    .navbar{
+   padding: 0;
+      
+   }
   
   
-    .mobile-button{
-      margin-top: 0;
-    }
 
+   .stripes-button{
+       display: block;
+       justify-content: space-between;
+   }
 
-  .stripes-button{
-    display: block;
-    justify-content: space-around;
-  }
-
-
-.link-bar{
-  flex-direction: column;
- width: 100%;
- height:100vh;
- justify-content: center;
- background-color: darkkhaki;
- opacity: 0.99;
- margin-top:-900px; /* make the nav-bar go at the top*/
- transition: all .5s ease-in-out;
- 
+   .link-bar{
+    flex-direction: column;
+   width: 100%;
+   height:100vh;
+   justify-content: center;
+   background-color: lavenderblush;
+   opacity: 0.99;
+   margin-top:-900px;  /* make the nav-bar go at the top*/
+   transition-duration: 1s;
+   transition-timing-function: ease-in-out;
+   z-index: 0;
+   
 }
-
+.mobile-button{
+    margin-top:0;
+}
 
 .link-bar li{
-  margin: 0 auto;
+    margin:25px auto;
+    
 }
-
 
 }
     
