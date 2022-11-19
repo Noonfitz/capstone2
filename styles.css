@@ -491,6 +491,12 @@ input[type=text], input[type=email] ,select,option {
 
 @media only screen and (max-width: 1200px){
 
+  .first-container p {
+    
+  font-size: 2vmin;
+  font-weight:500;
+  }
+
   .dropDownMonthly{
     width: 70%;
   }
@@ -529,11 +535,11 @@ input[type=text], input[type=email] ,select,option {
 
 @media only screen and (max-width: 720px){
   .dropDownMonthly{
-    width: 100%;
+    width: 80%;
   }
 
   .creditSpace .creditCard{
-    width: 100%;
+    width: 80%;
   }
   
   .first-container h1{
@@ -542,6 +548,7 @@ input[type=text], input[type=email] ,select,option {
 
   .first-container{
     margin: auto 0;
+    padding-bottom: 40px;
   }
 
   
@@ -594,7 +601,7 @@ input[type=text], input[type=email] ,select,option {
    width: 100%;
    height:100vh;
    justify-content: center;
-   background-color: lavenderblush;
+   background: rgb(212, 163, 115);
    opacity: 0.99;
    margin-top:-900px;  /* make the nav-bar go at the top*/
    transition-duration: 1s;
