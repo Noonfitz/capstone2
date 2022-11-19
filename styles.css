@@ -306,6 +306,11 @@ font-weight:500;
 
 
       /* personal info*/
+.information{
+  padding-top: 20px;
+  background-color: beige;
+
+}
 
   
 .donor-section {
@@ -423,6 +428,7 @@ input[type=text], input[type=email] ,select,option {
 
    .button{
     padding-bottom: 33px;
+    text-align: center;
    }
     
     button{
@@ -434,6 +440,7 @@ input[type=text], input[type=email] ,select,option {
       border: none;
       border-radius: 4px;
       cursor: pointer;
+      
     }
   
     button:hover{
@@ -484,6 +491,14 @@ input[type=text], input[type=email] ,select,option {
 
 @media only screen and (max-width: 1200px){
 
+  .dropDownMonthly{
+    width: 70%;
+  }
+
+  .creditSpace .creditCard{
+    width: 70%;
+  }
+
   .first-container h1{
     padding-top:100px;
   }
@@ -513,6 +528,13 @@ input[type=text], input[type=email] ,select,option {
 }
 
 @media only screen and (max-width: 720px){
+  .dropDownMonthly{
+    width: 100%;
+  }
+
+  .creditSpace .creditCard{
+    width: 100%;
+  }
   
   .first-container h1{
     padding-top: 80px;
