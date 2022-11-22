@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--font-->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+<!--CSS-->
+<link rel="stylesheet" href="styles.css">
+    <title>Contact US</title>
+</head>
+<body class="contact-body">
+
+  <!--nav-->
+  <nav class="navbar">
+    <ul class="link-bar">
+      <li><a href="./index.html">Home</a></li>
+      <li><a href="./about.html">About</a></li>
+      <li><a href="#adopt">Adopt</a></li>
+      <li><a href="#involved">Get Involved</a></li>
+      <li><a href="./form.html">Donate</a></li>
+    
+    </ul>
+      <img src="./img/menu-button.png" alt="menu-button" class="stripes-button">
+      </nav>
+
+
+ <!--contact form-->   
+  <div class="wrapper">
+    <h2>Contact us</h2>
+    <div id="error_message">
+       
+    </div>
+    <form action="" id="myform" onsubmit = "return validate();">
+      <div class="input_field">
+          <input type="text" placeholder="Name" id="name">
+      </div>
+      <div class="input_field">
+          <input type="text" placeholder="Subject" id="subject">
+      </div>
+      <div class="input_field">
+          <input type="text" placeholder="Phone" id="phone">
+      </div>
+      <div class="input_field">
+          <input type="text" placeholder="Email" id="email">
+      </div>
+      <div class="input_field">
+          <textarea placeholder="Message" id="message"></textarea>
+      </div>
+      <div class="btn">
+          <input type="submit">
+      </div>
+
+      
+    
+        
+    </form>
+  </div>
+
+  <section id="footer-contact">
+
+    <div class="row">
+      <div class="feature-box ">
+        <h3>Address.</h3>
+        <p class="para1" >The Humane Society of the United States<br>
+            1255 23rd St. NW, Suite 450
+            Washington, DC 20037</p>
+      </div>
+  
+      <div class="feature-box ">
+        <h3>CONTACT</h3>
+        <p class="para1">Tel: 202-452-1100 or 866-720-2676</p>
+      </div>
+  
+      <div class="feature-box ">
+        <h3>HOURS</h3>
+        <p class="para1">Monday through Friday 8 a.m. to 11 p.m</p>
+      </div>
+  
+      <div class="feature-box">
+        <h3>MAILING LIST</h3>
+  
+        <label for=""></label>
+        <input class="button-feature"type="email"  placeholder="Enter your E-mail here">
+        <button  type="button" class="btn">Subscribe</button>
+  
+      </div>
+    </div>
+  
+  
+  </section>
+
+  
+   <!-- footer-contact -->
+
+  <script src="index.js"></script>
+</body>
+</html>

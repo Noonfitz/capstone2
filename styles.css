@@ -320,7 +320,7 @@ margin: auto 40em;
 }
 
 
-input[type=text], input[type=email] ,select,option {
+input[type=text], input[type=email] ,input[type=password],select,option {
     width: 100%;
     padding: 9px 10px;
     margin: 11px 0;
@@ -620,6 +620,105 @@ input[type=text], input[type=email] ,select,option {
 
 }
     
+
+/* contact page*/
+
+.contact-body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  font-family:'Poppins', sans-serif;
+}
+
+.wrapper{
+  position: relative;
+  margin: 0 auto;
+margin-top: 8%;
+margin-bottom: 5%;
+  max-width: 550px;
+  width: 100%;
+  background: #fff;
+  padding: 25px;
+  border-radius: 5px;
+  box-shadow: 4px  rgba(254,236,164,1); 
+  background:#faedcd;
+  z-index: -2;
+
+}
+
+.wrapper h2{
+  text-align: center;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: #332902;
+}
+
+.wrapper .input_field{
+  margin-bottom: 10px;
+}
+
+.wrapper .input_field input[type="text"],
+.wrapper textarea{
+  border: 1px solid #e0e0e0;
+  width: 100%;
+  padding: 10px;
+}
+
+.wrapper textarea{
+  resize: none;
+  height: 80px;
+}
+
+.wrapper .btn input[type="submit"]{
+  border: 0px;
+  margin-top: 15px;
+  padding: 10px;
+  text-align: center;
+  width: 100%;
+  background:  rgb(212, 163, 115); 
+
+  color: #332902;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-weight: bold;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+#error_message{
+  margin-bottom: 20px;
+  background: #fe8b8e;
+  padding: 0px;
+  text-align: center;
+  font-size: 14px;
+  transition: all 0.5s ease;
+}
+
+.btn{
+  width:50%;
+  margin: 0 auto;
+}
+
+
+#footer-contact h3{
+  text-align: center;
+}
+
+@media only screen and (max-width: 720px){
+
+  #footer-contact{
+    text-align: center;
+  }
+
+  #footer-contact input[type=email]{
+    width:50%;
+    margin: 10px auto;
+
+  }
+}
+
 
 
 
