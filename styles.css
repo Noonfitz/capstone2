@@ -163,16 +163,15 @@ video {
 
 .featured-pets-container {
   background-color: rgb(204, 213, 174);
+  display: grid;
+  grid-auto-columns: minmax(15rem, auto);
+  grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+  grid-gap: 2.5rem;
 }
 
-.container {
-  width: 200px;
-  height: 120px;
-}
 
 /* Resize images */
 .container img {
-  display: flex;
   justify-content: space-around;
   height: 250px;
   width: 250px;
