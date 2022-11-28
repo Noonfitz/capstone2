@@ -2,10 +2,13 @@
 
 const menuBtn=document.querySelector('.stripes-button');
 const navBar= document.querySelector('.link-bar');
-
 menuBtn.addEventListener("click",function(){
-    navBar.classList.toggle('mobile-button');
+  navBar.classList.toggle('mobile-button');
+ 
 });
+
+
+
 
 
 // to make a **** for credit card
@@ -43,7 +46,6 @@ $('#creditCard').keyup(function(){
 
 
 
-
 // contact section
 
 function validate(){
@@ -77,8 +79,8 @@ function validate(){
     error_message.innerHTML = text;
     return false;
   }
-  if(message.length <= 140){
-    text = "Please Enter More Than 140 Characters";
+  if(message.length <= 100){
+    text = "Please Enter More Than 100 Characters";
     error_message.innerHTML = text;
     return false;
   }

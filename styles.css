@@ -566,6 +566,8 @@ input[type=text], input[type=email] ,input[type=password],select,option {
   
   }
 
+
+
   
 }
 
@@ -642,7 +644,7 @@ input[type=text], input[type=email] ,input[type=password],select,option {
    margin-top:-900px;  /* make the nav-bar go at the top*/
    transition-duration: 1s;
    transition-timing-function: ease-in-out;
-   z-index: 0;
+  
    
 }
 .mobile-button{
@@ -668,10 +670,9 @@ input[type=text], input[type=email] ,input[type=password],select,option {
 }
 
 .wrapper{
-  position:relative;
   margin: 0 auto;
-margin-top: 8%;
-margin-bottom: 5%;
+  margin-top: 8%;
+   margin-bottom: 2%;
   max-width: 550px;
   width: 100%;
   background: #fff;
@@ -714,7 +715,6 @@ margin-bottom: 5%;
   text-align: center;
   width: 100%;
   background:  rgb(212, 163, 115); 
-
   color: #332902;
   text-transform: uppercase;
   letter-spacing: 5px;
@@ -742,6 +742,26 @@ margin-bottom: 5%;
   text-align: center;
 }
 
+#footer-contact{
+  margin-bottom: 30px;
+
+}
+
+@media only screen and (max-width: 1200px){
+  .wrapper{
+   
+    margin: 0 auto;
+  margin-top: 15%;
+  margin-bottom: 2%;
+    max-width: 550px;
+    width: 100%;
+    background: #fff;
+    padding: 25px;
+    border-radius: 5px;
+    box-shadow: 4px  rgba(254,236,164,1); 
+    background:#faedcd;
+  }
+}
 @media only screen and (max-width: 720px){
 
   #footer-contact{
@@ -756,9 +776,13 @@ margin-bottom: 5%;
 
   .wrapper{
     margin-top: 20%;
-    z-index: -1;
+
   }
+
+  
+  
 }
+
 
 
 
