@@ -10,7 +10,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
    
 <!--font-->
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
 
     <title>Donation Form</title>
 </head>
@@ -81,7 +81,7 @@
 
 <!--personal info-->
 
-<form action="" class="information">
+<form id ="form-donation" action="" class="information">
     <h2 class="donorHead ">Personal Info</h2>
 
   <div class="donor-section">
@@ -141,11 +141,12 @@
     <h2 class="donorHead">Donation information</h2>
     <h4 >*Gift Amount</h4>
    <div class="space">
-     <input type="radio" id="fiveHun" name="money"><span> </span><label for="fiveHun">$500</label><br>
-     <input type="radio" id="oneHun"name="money"><span> </span><label for="oneHun">$100</label><br>
-     <input type="radio" id="fifth"name="money"><span> </span><label for="fifth">$50</label><br>
-     <input type="radio" id="twentyFive" name="money"><span> </span><label for="twentyFive">$25</label><br>
-     <input type="radio" id="upto" name="money"><span> </span><label for="upto">$ </label><input class="putAmount"type="text"><br>
+     <input type="radio" id="fiveHun"   value="fiveHun"   name="money"><span> </span><label for="fiveHun">$500</label><br>
+     <input type="radio" id="oneHun"    value="oneHun"    name="money"><span> </span><label for="oneHun">$100</label><br>
+     <input type="radio" id="fifth"     value="fifth"     name="money"><span> </span><label for="fifth">$50</label><br>
+     <input type="radio" id="twentyFive"value="twentyFive"name="money"><span> </span><label for="twentyFive">$25</label><br>
+     <input type="radio" id="upto"      value="upto"      name="money"><span> </span><label for="upto">Other</label>
+     <input class="putAmount" name ="other-input" id="other-input"  type="text"><br>
    </div>
       
    <div class= "monthlyOrOneTime">
@@ -209,7 +210,7 @@
 
     <div class="cvv">
        <label for="">Security Code</label>
-        <input type="text"  maxlength ="4" name="" id="cvv" required>
+        <input type="text"  maxlength ="3" name="cvv" id="cvv" data-validation="number" data-validation-error-msg="Enter 3 digit CVV" required>
     </div>
 
      <div class="button">

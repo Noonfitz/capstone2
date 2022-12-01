@@ -13,11 +13,11 @@ menuBtn.addEventListener("click",function(){
 
 // to make a **** for credit card
 var number = $('#creditCard');
-var display = $('#show');
+
 
 $('#creditCard').keyup(function(){
     if($('#creditCard').val().length < 1){
-        $('#show').text('');
+       
     }
     else{
         var a = '';
@@ -45,16 +45,15 @@ $('#creditCard').keyup(function(){
 
 
 
-
 // contact section
 
 function validate(){
-  var name = document.getElementById("name").value;
-  var subject = document.getElementById("subject").value;
-  var phone = document.getElementById("phone").value;
-  var email = document.getElementById("email").value;
-  var message = document.getElementById("message").value;
-  var error_message = document.getElementById("error_message");
+  let name = document.getElementById("name").value;
+  let subject = document.getElementById("subject").value;
+  let phone = document.getElementById("phone").value;
+  let email = document.getElementById("email").value;
+  let message = document.getElementById("message").value;
+  let error_message = document.getElementById("error_message");
   
   error_message.style.padding = "10px";
   
@@ -64,7 +63,7 @@ function validate(){
     error_message.innerHTML = text;
     return false;
   }
-  if(subject.length < 10){
+  if(subject.length < 7){
     text = "Please Enter Correct Subject";
     error_message.innerHTML = text;
     return false;
@@ -79,8 +78,8 @@ function validate(){
     error_message.innerHTML = text;
     return false;
   }
-  if(message.length <= 100){
-    text = "Please Enter More Than 100 Characters";
+  if(message.length <= 50){
+    text = "Please Enter More Than 50 Characters";
     error_message.innerHTML = text;
     return false;
   }
