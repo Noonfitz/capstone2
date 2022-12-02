@@ -179,6 +179,13 @@ video {
   border-radius:50%;
 }
 
+.article-body-container img {
+  justify-content: space-around;
+  height: 250px;
+  width: 250px;
+  overflow: hidden;
+}
+
 .view-more-button {
   background-color: rgb(212, 163, 115);
 }
