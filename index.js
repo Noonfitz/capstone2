@@ -1,5 +1,5 @@
 
-
+//hamburger menu button (mobile)
 const menuBtn=document.querySelector('.stripes-button');
 const navBar= document.querySelector('.link-bar');
 menuBtn.addEventListener("click",function(){
@@ -83,6 +83,6 @@ function validate(){
     error_message.innerHTML = text;
     return false;
   }
-  alert("Form Submitted Successfully!");
+  alert("Thank you for contacting us, we will get in touch with you soon");
   return true;
 }
