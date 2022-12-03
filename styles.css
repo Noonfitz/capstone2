@@ -143,7 +143,6 @@ video {
 .donate-button {
   border-radius: 50%;
   background-color: rgb(212, 163, 115);
-
 }
 
 .stats-container {
@@ -197,22 +196,17 @@ video {
   font-family:'Poppins', sans-serif;
 }
 
-.logo {
-  max-width: 100%;
-  height: auto;
-}
-
 .leadership-container {
   display: flex;
   flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
 }
-
-.leadership-info {
-  display: grid;
-  grid-auto-columns: minmax(15rem, auto);
-  grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
-  grid-gap: 1rem;
-  padding: 3rem;
+.leadership-heading-container{
+  background-color: rgb(204, 213, 174);
+  padding: 20px;
 }
 
 .leadership img { 
@@ -221,7 +215,58 @@ video {
   border-radius: 50%;
 }
 
+#leadership-heading, #fights-heading {
+  width: 50vw;
+  height: 50px;
+  background: rgb(250, 237, 205);
+  border-radius: 100px / 50px;
+  z-index: 0;
+  text-align: center;
+  margin: auto;
+}
 
+.fights{
+  height: 50px;
+  border-radius: 50%;
+  background-color: rgb(212, 163, 115);
+}
+
+.fights-container img{
+  height: 250px;
+  width: 400px;
+}
+.about{
+  background-color: rgb(212, 163, 115);
+}
+
+.logo{
+  max-width: 100%
+}
+
+iframe {
+  position: relative;
+  z-index: 1;
+  width: 100vw;
+  height: 100vh;
+}
+
+.about-info{
+  display: grid;
+  grid-area: 1 / 2 / 1 / 2;
+  z-index: 5;
+  width: 100vw;
+  text-align: center;
+  font-size: 1.5em;
+  padding: 20px;
+}
+
+.video-container{
+  margin: 0 auto;
+  padding: 0;
+  position: relative;
+  z-index: 2;
+  text-shadow: 0 1px 5px rgba(0, 0, 0, 1);
+}
 
 /*form.html page*/
 
