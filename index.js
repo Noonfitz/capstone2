@@ -13,8 +13,6 @@ menuBtn.addEventListener("click",function(){
 
 // to make a **** for credit card
 var number = $('#creditCard');
-
-
 $('#creditCard').keyup(function(){
     if($('#creditCard').val().length < 1){
        
